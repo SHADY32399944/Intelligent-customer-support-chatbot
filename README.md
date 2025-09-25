@@ -1,98 +1,39 @@
 Intelligent Customer Support Chatbot
 
-This project implements an AI-powered customer support chatbot that can automatically:
+This project is an AI-powered chatbot that helps handle customer support queries. It can categorize questions into Technical, Billing, or General, analyze customer sentiment, and provide helpful responses or escalate issues if needed. A simple Gradio interface allows users to interact with the chatbot directly in Colab.
 
-Categorize incoming customer queries into Technical, Billing, or General issues
+Features
 
-Analyze customer sentiment (positive, negative, neutral)
+Automatic query categorization
 
-Generate helpful responses or escalate the issue if needed
+Sentiment analysis
 
-Provide an interactive Gradio interface for testing
+Response generation with troubleshooting steps
 
-The chatbot is built with LangGraph, Python, and Gradio, and is designed to demonstrate intelligent query handling for customer service workflows.
+Escalation to human support
 
-📂 Project Structure
+Easy-to-use Gradio interface
 
-Intelligent_Customer_Support_chatbot.ipynb → Main notebook containing code for the chatbot workflow
+Setup
 
-README.md → Project documentation
+Install the required Python libraries.
 
-⚡ Features
+Add your API keys in a .env file.
 
-Automated Categorization – Detects whether a query is Technical, Billing, or General.
+Run the notebook in Google Colab or Jupyter.
 
-Sentiment Analysis – Understands customer tone for better responses.
+Launch the Gradio interface to test the chatbot.
 
-Response Generation – Provides step-by-step troubleshooting and answers.
+Example
 
-Escalation – Routes complex issues to human support.
+A user reporting slow internet is categorized as Technical, with a Neutral sentiment, and receives troubleshooting guidance.
 
-Gradio UI – Simple web interface to interact with the chatbot in Colab.
+Future Enhancements
 
-🚀 Setup Instructions
+Integration with CRM systems
 
-Clone / Upload Notebook
+Multi-turn conversation support
 
-Upload Intelligent_Customer_Support_chatbot.ipynb to Google Colab (or run locally with Jupyter).
+Multi-language capability
 
-Install Dependencies
-
-pip install gradio langgraph python-dotenv
-
-
-Environment Variables
-
-Create a .env file to store your API keys (e.g., Groq, OpenAI).
-
-GROQ_API_KEY=your_api_key_here
-
-
-Run the Notebook
-
-Execute all cells to build and run the workflow.
-
-Launch Gradio Interface
-
-The final cell will create a chatbot interface.
-
-In Colab, run:
-
-iface.launch(share=True)
-
-
-Copy the generated public link to interact with your chatbot.
-
-🧪 Example Query
-
-User:
-
-"My internet keeps lagging especially during the afternoon hours, can you help me?"
-
-Bot:
-
-Category → Technical
-
-Sentiment → Neutral
-
-Response → Troubleshooting steps + follow-up questions
-
-📌 Future Improvements
-
-Integrate with a real customer database / CRM
-
-Add multi-turn conversation memory
-
-Support multiple languages
-
-Deploy as a standalone web app or API
-
-🛠️ Tech Stack
-
-Python 3.10+
-
-LangGraph – for workflow state management
-
-Gradio – for user interface
-
-dotenv – for managing API keys securely
+Deployment as a web app or API
